@@ -30,12 +30,6 @@ const Header = () => {
                 청약정보
               </a>
               <a
-                href="#about"
-                className="px-3 py-2 rounded-md text-sm font-medium hover:bg-primary-hover transition-colors"
-              >
-                회사소개
-              </a>
-              <a
                 href="#contact"
                 className="px-3 py-2 rounded-md text-sm font-medium hover:bg-primary-hover transition-colors"
               >

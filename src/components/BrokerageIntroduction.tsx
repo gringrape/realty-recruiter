@@ -23,10 +23,10 @@ const BrokerageIntroduction = () => {
             {/* Promotional Header */}
             <div className="text-center mb-6 p-4 bg-real-estate-light/30 rounded-lg border-2 border-real-estate-blue/20">
               <h3 className="text-lg sm:text-xl font-bold text-real-estate-blue mb-2">
-                월세 70만원! 나는 멋진한 놈 있나?
+                월세 70만원 내는 멍청한 놈 있냐?
               </h3>
               <p className="text-sm text-muted-foreground">
-                잔소리 듣기 싫으면 찾아하라 잘말로
+                잔소리듣기 싫으믄 청약혀라 참말로
               </p>
             </div>
 
@@ -43,7 +43,7 @@ const BrokerageIntroduction = () => {
                       ))}
                     </div>
                   </div>
-                  <h4 className="text-lg font-bold">힘스테이트 강남 아파트</h4>
+                  <h4 className="text-lg font-bold">힐스테이트 강남 아파트</h4>
                 </div>
 
                 {/* Property Info Boxes */}
@@ -60,7 +60,7 @@ const BrokerageIntroduction = () => {
                   </Card>
                   <Card className="border-2 border-real-estate-blue/30">
                     <CardContent className="p-4 text-center">
-                      <p className="font-semibold">12평/방 2개</p>
+                      <p className="font-semibold">12평 / 방 3개</p>
                     </CardContent>
                   </Card>
                 </div>
@@ -86,13 +86,7 @@ const BrokerageIntroduction = () => {
               <div className="lg:col-span-1">
                 <Card className="h-full min-h-[200px] border-2 border-real-estate-blue/30">
                   <CardContent className="p-6 flex items-center justify-center h-full">
-                    <div className="text-center text-muted-foreground">
-                      <div className="w-16 h-16 mx-auto mb-3 bg-real-estate-light rounded-lg flex items-center justify-center">
-                        <span className="text-2xl">🏠</span>
-                      </div>
-                      <p className="font-medium">아파트</p>
-                      <p className="text-sm">조감도</p>
-                    </div>
+                     <img src="https://building2.auric.or.kr/Upload/BuildingImg/Large/5703_ae4cc628-b460-4942-8a5b-e0a46beba6d6.jpg?width=900" />
                   </CardContent>
                 </Card>
               </div>
@@ -102,14 +96,17 @@ const BrokerageIntroduction = () => {
             <div className="mt-6 p-4 bg-real-estate-light/50 rounded-lg border border-real-estate-blue/20">
               <div className="text-center">
                 <h5 className="font-bold text-real-estate-blue mb-2">
-                  ♣중계내밭민트♣
+                  ♣중매뽀인트♣
                 </h5>
-                <p className="text-sm mb-2">
-                  강남 롯데리 10분! 걸까갔항, 아제마 기출한신인싸인어! 젝당혜!
+                <p className="text-smm mb-2">
+                  월세 70만 원에 최장 10년까지 살 수 있으니, 이제 막 가출한 신입직원한테는 이만한 집 또 없제.
+                  
                 </p>
                 <div className="text-xs text-muted-foreground space-y-1">
-                  <p>□ㄴㅇㅎ□ㄴㅇㅎ□ㄴㅇㅎ□ㄴㅇㅎ□ㄴㅇㅎ□ㄴㅇㅎ□ㄴㅇㅎ□ㄴㅇㅎ□ㄴㅇㅎ</p>
-                  <p>□ㄴㅇㅎ□ㄴㅇㅎ□ㄴㅇㅎ□ㄴㅇㅎ□ㄴㅇㅎ□ㄴㅇㅎ□ㄴㅇㅎ□ㄴㅇㅎ□ㄴㅇㅎ</p>
+                  <p>                  강남 출퇴근 10분! 지하철역까지 5분이면 금방이라 출근길 지옥철 스트레스 덜혀
+                  
+</p>
+                  <p>12평이지만 방이 3개라 신입이든 둘이 살든 공간 넉넉허고, 집도 깨끗허니 짐만 들고 와서 바로 살아도 댜.</p>
                 </div>
               </div>
             </div>

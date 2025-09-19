@@ -15,67 +15,67 @@ interface SubscriptionData {
   moveInDate: string;
   priceRange: string;
   type: string;
-  status: "모집중" | "마감임박" | "접수완료";
+  status: "접수예정" | "접수중" | "마감임박" | "접수완료";
 }
 
 const subscriptionData: SubscriptionData[] = [
   {
     id: 1,
-    title: "힘스테이트 강남 더파크",
-    location: "서울 강남구 대치동",
-    totalUnits: 1200,
-    availableUnits: 180,
-    applicationStart: "2024-01-15",
-    applicationEnd: "2024-01-22",
-    moveInDate: "2024-12-01",
-    priceRange: "5억~8억",
-    type: "민영주택",
-    status: "모집중"
+    title: "레미안 OO",
+    location: "서울특별시 강남구",
+    totalUnits: 1050,
+    availableUnits: 700,
+    applicationStart: "2025-10-3",
+    applicationEnd: "2025-10-4",
+    moveInDate: "2025-12-01",
+    priceRange: "7.2억~9.1억",
+    type: "민간분양",
+    status: "접수예정"
   },
   {
     id: 2,
-    title: "래미안 서초 센트럴",
-    location: "서울 서초구 서초동",
-    totalUnits: 800,
-    availableUnits: 45,
-    applicationStart: "2024-01-10",
-    applicationEnd: "2024-01-20",
-    moveInDate: "2024-10-01",
-    priceRange: "6억~10억",
-    type: "민영주택",
-    status: "마감임박"
+    title: "신혼 희망 타운",
+    location: "경기도 과천시",
+    totalUnits: 850,
+    availableUnits: 500,
+    applicationStart: "2025-10-7",
+    applicationEnd: "2025-10-8",
+    moveInDate: "",
+    priceRange: "4.2억~5.3억(추정)",
+    type: "공공분양",
+    status: "접수중"
   },
   {
     id: 3,
-    title: "포레나 분당",
-    location: "경기 성남시 분당구",
-    totalUnits: 600,
+    title: "행복주택 OO역",
+    location: "인천 연수구",
+    totalUnits: 420,
     availableUnits: 0,
-    applicationStart: "2024-01-05",
-    applicationEnd: "2024-01-15",
-    moveInDate: "2024-08-01",
+    applicationStart: "2025-10-15",
+    applicationEnd: "2025-10-16",
+    moveInDate: "2025-10-31",
     priceRange: "4억~7억",
-    type: "민영주택",
-    status: "접수완료"
+    type: "행복주택",
+    status: "접수예정"
   },
   {
     id: 4,
-    title: "e편한세상 송파",
-    location: "서울 송파구 송파동",
-    totalUnits: 900,
-    availableUnits: 220,
-    applicationStart: "2024-01-20",
-    applicationEnd: "2024-01-27",
-    moveInDate: "2025-01-01",
+    title: "국민임대 OO",
+    location: "부산 해운대구",
+    totalUnits: 600,
+    availableUnits: 0,
+    applicationStart: "2025-9-28",
+    applicationEnd: "2025-9-30",
+    moveInDate: "2025-10-15",
     priceRange: "4억~6억",
-    type: "민영주택",
-    status: "모집중"
+    type: "공공임대",
+    status: "접수중"
   }
 ];
 
 const getStatusColor = (status: string) => {
   switch (status) {
-    case "모집중":
+    case "접수예정":
       return "bg-success text-white";
     case "마감임박":
       return "bg-warning text-white";
@@ -126,11 +126,12 @@ const SubscriptionInfo = () => {
                   </div>
                   <div className="flex items-center gap-2 text-sm text-muted-foreground">
                     <Users className="w-4 h-4" />
-                    <span>전체 {item.totalUnits}세대 / 모집 {item.availableUnits}세대</span>
+                    <span>총 {item.totalUnits}세대</span>
+                    <span>{item.availableUnits === 0 ? "" : `/ 일반 ${item.availableUnits}세대`}</span>
                   </div>
                   <div className="flex items-center gap-2 text-sm text-muted-foreground">
                     <CalendarDays className="w-4 h-4" />
-                    <span>입주: {item.moveInDate}</span>
+                    <span>접수기간: {item.applicationStart} ~ {item.applicationEnd}</span>
                   </div>
                 </div>
 
